@@ -1,0 +1,55 @@
+#proyecto1 {
+    width: 200px;
+}
+
+#TvContent {
+    margin: 150px 250px auto 120px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#ulTele {
+    display: block;
+
+    li {
+        margin-top: 10px;
+    }
+
+}
+
+#fotos {
+    width: 200px;
+    margin-top: 10px;
+}
+
+
+#gif {
+    width: 300px;
+    height: 300px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 700px) {
+    p {
+        font-size: 20px;
+    }
+
+    #TvContent {
+        margin: auto;
+        padding: 50px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #ulTele {
+
+
+        li {
+            margin: 30px;
+
+        }
+
+    }
+
+
+}

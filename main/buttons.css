@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+
+
+:root {
+    --col-primary: white;
+    --corner-radius: 5px;
+}
+
+button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 5px 10px;
+    padding: 0 10px;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: var(--col-primary);
+    border: 1px solid var(--col-primary);
+    border-radius: var(--corner-radius);
+
+    line-height: 2em;
+
+
+
+    box-shadow: 0 0 0 0 transparent;
+    transition: all 0.2s ease-in-out;
+
+}
+
+button:hover {
+    color: black;
+    box-shadow: 0 0 20px 0 rgba(0, 199, 236, 0.5);
+    background-color: var(--col-primary);
+    transition: all 0.2s ease-out;
+
+}
+
+button:before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    left: 0%;
+
+    opacity: 0;
+    background: black;
+    box-shadow: 0 0 10px 3px white;
+    transform: skewX(-20deg);
+}
+
+button:hover:before {
+    opacity: 1;
+    animation: shine 0.5s 0s linear;
+}
+
+@keyframes shine {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+button:active {
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.2s ease-in;
+}
