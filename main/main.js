@@ -8,7 +8,7 @@ const data = [
         alex: [
             {
                 name: "Alejandro Carrión Ponce",
-                about: "Soy Alex, estudiante de programación full stack, soy una persona disciplinada, trabajadora y que sabe funcionar en equipo, me gusta el deporte y leer en mis tiempos libres."
+                about: "Soy Alex, estudiante de programación Full Stack. Soy una persona disciplinada, trabajadora y que sabe funcionar en equipo, me gusta el deporte y leer en mis tiempos libres.."
             }
         ]
 
