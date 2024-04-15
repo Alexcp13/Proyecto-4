@@ -20,6 +20,9 @@ button {
     color: var(--col-primary);
     border: 1px solid var(--col-primary);
     border-radius: var(--corner-radius);
+    width: 100%;
+
+
 
     line-height: 2em;
 

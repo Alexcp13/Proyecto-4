@@ -11,10 +11,9 @@ main {
 }
 
 section {
-    padding: 60px;
+    margin: 0 20px;
     display: flex;
     justify-content: space-between;
-
 
 
 
@@ -27,7 +26,7 @@ h1 {
 
 #main {
 
-    width: 100%;
+
     margin-top: 30px;
 
 
@@ -51,7 +50,7 @@ h1 {
 #div1 {
     text-align: center;
     justify-content: center;
-    width: 100%;
+
 
 }
 
@@ -61,10 +60,10 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 30px;
-
+    ;
+    height: 500px;
     margin: auto;
-    width: 100%;
-    height: 600px;
+
 
     font-size: 30px;
     justify-content: center;
@@ -77,16 +76,18 @@ h1 {
 
 }
 
-@media screen and (min-width: 480px) and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     #section {
         display: block;
     }
 
     #div2 {
-        width: 80%;
+
         background-image: none;
         border-radius: 30px;
+
     }
+
 
     #div1 {
         display: block;
@@ -94,7 +95,7 @@ h1 {
 
     #main ul {
         display: block;
-        padding: 10px;
+
         margin-top: 10px;
 
         li {
@@ -102,9 +103,15 @@ h1 {
 
         }
     }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+
+    #main ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
 
-
-
-
+    }
 }

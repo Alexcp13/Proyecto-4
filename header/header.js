@@ -1,5 +1,18 @@
 import "./header.css"
-const navBarra = ["GitHub", "LinkedIn", "Contacto"]
+const navBarra = [
+    {
+        name: 'GitHub',
+        link: "https://github.com/Alexcp13?tab=repositories"
+    },
+    {
+        name: 'LinkedIn',
+        link: "https://www.linkedin.com/in/alejandro-carrion-ponce-a755a8296/"
+    },
+    {
+        name: 'Contacto',
+        link: "mailto:acp1320002@outlook.es"
+    },
+];
 
 export const header = () => {
 
@@ -24,11 +37,13 @@ export const header = () => {
     navBarra.forEach(items => {
         const ul = document.createElement('ul');
         const li = document.createElement('li');
-
         const anchor = document.createElement('a');
+        anchor.textContent = items.name;
+        anchor.href = items.link
 
-        anchor.textContent = items;
-        anchor.href = '#';
+
+
+
 
         li.appendChild(anchor);
         ul.appendChild(li);

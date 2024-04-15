@@ -3,14 +3,16 @@
 }
 
 #TvContent {
-    margin: 150px 250px auto 120px;
+    margin: 100px 350px auto 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
 
 }
 
 #ulTele {
     display: block;
+
 
     li {
         margin-top: 10px;
@@ -29,14 +31,21 @@
     height: 300px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 700px) {
+
+@media screen and (max-width: 768px) {
     p {
         font-size: 20px;
     }
 
+    #fotos {
+        width: 100%;
+
+
+    }
+
     #TvContent {
-        margin: auto;
-        padding: 50px;
+        margin: 0 20px;
+        display: block;
         align-items: center;
         text-align: center;
     }
@@ -52,4 +61,12 @@
     }
 
 
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+
+    #TvContent {
+        margin: 80px 150px auto 50px;
+
+    }
 }
