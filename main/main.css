@@ -50,20 +50,19 @@ h1 {
 #div1 {
     text-align: center;
     justify-content: center;
+    margin: auto;
+    width: 100%;
 
 
 }
 
 #div2 {
-    background-image: url('../assets/tele.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 30px;
-    ;
-    height: 500px;
-    margin: auto;
 
+
+
+
+    margin: auto;
+    width: 100%;
 
     font-size: 30px;
     justify-content: center;
@@ -108,9 +107,9 @@ h1 {
 @media screen and (min-width: 768px) and (max-width:992px) {
 
     #main ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+
+
 
 
     }
